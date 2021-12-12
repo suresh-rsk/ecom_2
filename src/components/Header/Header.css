@@ -1,0 +1,46 @@
+.Header{
+    display: flex;
+    height:12vh;
+    background-color: rgb(123, 118, 170);
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#logo{
+    display: inline;
+    float: left;
+    
+}
+
+input{
+   
+    padding: 0.7rem;
+    border: 2px solid rgb(123, 118, 170);
+}
+
+input[type=text]{
+    border-radius: 10px 0px 0px 10px;
+    width: 40vw; 
+}
+input[type=submit]{
+    border-radius: 0px 10px 10px 0px;
+    width: 5bw; 
+    margin-left: -2px;
+}
+#cart{
+    height: 60%;
+    border-radius: 10px;
+   
+}
+.profile{
+   
+    display: flex;
+    height: 60%;
+    width: 10vw;
+    align-items: center;
+}
+
+#profile{
+    height: 50%;
+}
+
