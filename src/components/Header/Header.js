@@ -10,10 +10,10 @@ const Header=()=>{
                     <input type="submit" value="search"></input>
                 </form>
             </div>
-            <img id="cart" src={"cart.png"}/>
+            <img id="cart" src={"cart.png"} alt="cart-logo"/>
             <div className="profile">
                 <h3>Account</h3>
-                <img id="profile" src={"profile_icon.png"}/>
+                <img id="profile" src={"profile_icon.png"} alt="profile-pic"/>
                 <h3>V</h3>
             </div>
         </div>
