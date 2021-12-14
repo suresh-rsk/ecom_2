@@ -1,0 +1,36 @@
+.navbar{
+    display: flex;
+    color:wheat;
+    height:5vh;
+}
+button{
+    border-radius:2px;
+    border:none;
+}
+
+.navbar button{
+    display: inline-block;
+    height: 100%;
+    width: 14.3vw;
+    justify-items:center;
+    background-color: rgb(97, 81, 97);
+    color: white;
+}
+.dropdown button{
+    background-color: white;
+    color: rgb(97, 81, 97);
+    display: none;
+    height: 5vh;
+    margin: -2px auto;
+}
+.navbar button:hover, .dropdown button:hover{
+    background-color: rgb(167, 137, 167);
+}
+
+.nav-button:hover .dropdown button{
+    display: block;  
+}
+
+.dropdown:last-child{
+    background-color: red;
+}

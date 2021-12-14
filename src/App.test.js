@@ -1,8 +1,17 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen, cleanup } from '@testing-library/react';
 import App from './App';
+import react from 'react'
+import Navbar from './components/Navbar/Navbar'
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+afterEach(cleanup);
+
+// test('renders learn react link', () => {
+//   render(<App />);
+//   const linkElement = screen.getByText(/learn react/i);
+//   expect(linkElement).toBeInTheDocument();
+// });
+ 
+it('should have classname',()=>{
+  const{getByTestId}=render(<Navbar/>);
+  expect(getByTestId("nav"))
 });
