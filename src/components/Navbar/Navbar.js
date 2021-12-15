@@ -1,74 +1,31 @@
 import './Navbar.css'
 
 const Navbar=()=>{
+
+    let Nav_items={"Best Sellers":["Redmi Note 7 Pro", "Mac Pro 2","LG TV 5", "Airtel Data Card"],
+                "Electronics":["Mobiles","Laptops","Accessories","Smart Devices"],
+                "Fashion":["Men's Casual wear","Women's Casual wear","Men's Formal wear", "Children's wear","Accessories"],
+                "Gaming":["Gaming Laptops","Build PCs","Gaming Mobiles","Controllers","Games"],
+                "Home Appliances":["TVs","Washing Machines","Refrigerators","Ovens","Air Conditioners","Water Purifiers"],
+                "Furnitures":["Tables and Desks","Sofas and Chairs","Wardrobes","Beds and Mattresses","Chimneys and Kitchen set"],
+                "Groceries":["Vegetables","Masala items","Instant foods","Cosmetics","Hygiene Products"]
+            }
+    
     return(
         <div data-TestId="nav" className="navbar">
-            <div className="nav-button">
-                <button>Best Sellers</button>
+            {
+                Object.keys(Nav_items).map((key,index)=>
+                <div className="nav-button">
+                    <button>{key}</button>
                 <div className="dropdown">
-                    <button>Redmi Note 7 Pro</button>
-                    <button>Mac Pro</button>
-                    <button>LG TV 5</button>
-                    <button>Airtel Data Card 2.0</button>
+                    {
+                    Nav_items[key].map(k=><div className="dropdown">
+                    <button>{k}</button></div>)
+                    }
                 </div>
-            </div>
-            <div className="nav-button">
-                <button>Electronics</button>
-                <div className="dropdown">
-                    <button>Mobiles</button>
-                    <button>Laptops</button>
-                    <button>Accessories</button>
-                    <button>Smart Devices</button>
                 </div>
-            </div>
-           
-            <div className="nav-button">
-                <button>Fashion</button>
-                <div className="dropdown">
-                    <button>Men's Casual Wear</button>
-                    <button>Men's Formal Wear</button>
-                    <button>Women's section</button>
-                    <button>Children's wear</button>
-                    <button>Accessories</button>
-                </div>
-            </div>
-            <div className="nav-button">
-                <button>Gaming</button>
-                <div className="dropdown">
-                    <button>Gaming Mobiles</button>
-                    <button>Gaming Laptops</button>
-                    <button>Gaming Gears</button>
-                    <button>Smart Devices</button>
-                </div>
-            </div>
-            <div className="nav-button">
-                <button>Home Appliances</button>
-                <div className="dropdown">
-                    <button>Televisions</button>
-                    <button>Refrigerators</button>
-                    <button>Washing Machines</button>
-                    <button>Air Conditioners</button>
-                    <button>Water Purifiers</button>
-                    <button>Ovens</button>
-                </div>
-            </div>
-            <div className="nav-button">
-                <button>Furnitures</button>
-                <div className="dropdown">
-                    <button>Beds and Matresses</button>
-                    <button>Tables and Desks</button>
-                    <button>Sofas and chairs</button>
-                </div>
-            </div>
-            <div className="nav-button">
-                <button>Grocery</button>
-                <div className="dropdown">
-                    <button>Vegetables</button>
-                    <button>Cooking oils</button>
-                    <button>Cosmetics</button>
-                    <button>Bathroom materials</button>
-                </div>
-            </div>
+                )
+            }
         </div>
     )
 }

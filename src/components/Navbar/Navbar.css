@@ -1,7 +1,12 @@
+*{
+    box-sizing: border-box;
+}
 .navbar{
     display: flex;
     color:wheat;
     height:5vh;
+    width:100%;
+
 }
 button{
     border-radius:2px;
@@ -9,12 +14,12 @@ button{
 }
 
 .navbar button{
-    display: inline-block;
+    display: block;
     height: 100%;
-    width: 14.3vw;
     justify-items:center;
     background-color: rgb(97, 81, 97);
     color: white;
+    width:13.7vw;
 }
 .dropdown button{
     background-color: white;
@@ -22,6 +27,7 @@ button{
     display: none;
     height: 5vh;
     margin: -2px auto;
+    width: 100%;
 }
 .navbar button:hover, .dropdown button:hover{
     background-color: rgb(167, 137, 167);
@@ -31,6 +37,3 @@ button{
     display: block;  
 }
 
-.dropdown:last-child{
-    background-color: red;
-}
