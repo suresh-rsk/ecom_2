@@ -6,11 +6,16 @@
     color:wheat;
     height:5vh;
     width:100%;
+    position: relative;
+    z-index: 2;
 
 }
 button{
     border-radius:2px;
     border:none;
+}
+.option:hover{
+    border: 2px solid rgb(219, 189, 199);
 }
 
 .navbar button{
@@ -19,7 +24,7 @@ button{
     justify-items:center;
     background-color: rgb(97, 81, 97);
     color: white;
-    width:13.7vw;
+    width:13.3vw;
 }
 .dropdown button{
     background-color: white;
@@ -34,6 +39,11 @@ button{
 }
 
 .nav-button:hover .dropdown button{
-    display: block;  
+    display: block; 
+     
+}
+
+.navbar img{
+    width: 7vh;
 }
 
