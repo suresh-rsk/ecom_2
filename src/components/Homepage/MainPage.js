@@ -1,11 +1,12 @@
 import './Homepage.css'
 import { useContext } from 'react';
-import ElectronicsPage from '../SubPages/ElectronicsPage/ElectronicsPage';
-import FashionPage from '../SubPages/FashionPage/FashionPage';
-
+import { pageContext } from '../../App';
 
 const MainPage=()=>{
+    const newPage=useContext(pageContext)
+    const PageData=newPage.page
     // const pageData= useContext(mainPageData)
-    return(<div className="mainpage">MainPage</div>)
+    
+    return(<div><PageData/></div>)
 }
 export default MainPage;

@@ -14,7 +14,6 @@ const Header=()=>{
             <div className="profile">
                 <h3>Account</h3>
                 <img id="profile" src={"profile_icon.png"} alt="profile-pic"/>
-                <h3>V</h3>
             </div>
         </div>
     )

@@ -4,7 +4,7 @@
 .navbar{
     display: flex;
     color:wheat;
-    height:5vh;
+    height: 25px;
     width:100%;
     position: relative;
     z-index: 2;
@@ -39,11 +39,15 @@ button{
 }
 
 .nav-button:hover .dropdown button{
-    display: block; 
-     
+    display: block;      
 }
 
 .navbar img{
-    width: 7vh;
+    width: 3vw;
 }
 
+@media screen and (max-width:900px) {
+    button{
+        font-size: 0.7rem;
+    }
+}

@@ -11,7 +11,8 @@ afterEach(cleanup);
 //   expect(linkElement).toBeInTheDocument();
 // });
  
-it('should have classname',()=>{
-  const{getByTestId}=render(<Navbar/>);
-  expect(getByTestId("nav"))
+it("first test",()=>{
+render(<App/>);
+const testElement=screen.getByText(/App/i);
+expect(testElement).toBeInTheDocument();
 });
